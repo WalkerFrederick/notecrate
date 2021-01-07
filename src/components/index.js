@@ -9,6 +9,9 @@ export {default as PastBoxes} from './PastBoxes'
 export {default as BigReview} from './BigReviews'
 export {default as ArtistProfitShare} from './ArtistProfitShare'
 
+export {default as CheckoutPage} from './CheckoutPage'
+
+
 export {truck as TruckIcon} from './Icons'
 export {heart as HeartIcon} from './Icons'
 export {shirt as ShirtIcon} from './Icons'

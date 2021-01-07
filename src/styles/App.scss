@@ -2,7 +2,6 @@
 @import 'fonts.scss';
 .App {
   padding-top: 70px; 
-  height: 2000px;
   font-size: 18px;
   * {
     font-family: $primary-font;
@@ -133,7 +132,9 @@
       margin-bottom: 15px;
     }
     :nth-child(2) {
-      background: $secondary;
+      button {
+        background: $secondary;
+      }
     }
   }
   video {
@@ -242,10 +243,14 @@
             text-align: center;
           }
         }
+        a {
+          width: 90%;
+
+        }
         button {
           background: $secondary;
           color: white;
-          width: 90%;
+          width: 100%;
           height: 40px;
           margin-top: 15px;
         }
@@ -589,6 +594,99 @@
         padding: 25px
       }
      }
+    }
+  }
+}
+
+
+.CheckoutPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .CheckoutPage-container {
+    max-width: 900px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    overflow-x: hidden;
+    .CheckoutPage-Heading {
+      margin-top: 50px;
+      background: $white;
+      padding: 0  15px;
+      position: relative;
+    }
+    .CheckoutPage-Heading::after  {
+      
+      content: "";
+      z-index: -1;
+      position: absolute;
+      top: 50%;
+      left: -50%;
+      right: 0;
+      width: 200%;
+      height: 3px;
+      opacity: .8;
+      background-color: $black;
+
+    }
+    .item {
+      display: flex;
+      border: 3px solid $secondary;
+      width: 90%;
+      .item-avatar {
+        height: 140px;
+        background: $primary-dark;
+        width: 90px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        h1 {
+          margin: 0;
+          color: $white;
+        }
+        span {
+          color: $white;
+        }
+      }
+      .item-content  {
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h1 {
+          font-size: 1em;
+          padding: 0;
+          margin: 0;
+        }
+        p  {
+          padding: 0;
+          margin: 0;
+          font-size: .7em;
+          color: $grey;
+        }
+        h2 {
+          margin: 0;
+          padding: 0;
+          font-size: 1em;
+          margin: 10px 0;
+          color: $primary-dark;
+        }
+      }
+    }
+    a {
+      margin: 25px;
+      color: $primary-dark;
+    }
+    button {
+      background: $primary;
+      color: $white;
+      padding: 15px 0px;
+      width: 100%;
+      max-width: 600px;
     }
   }
 }
