@@ -11,7 +11,7 @@ function HomeHeader() {
             <Link to="/subscribe"><button>SUBSCRIBE</button></Link>
             <Link to="/subscribe"><button>UPCOMING BOX</button></Link>
         </div>
-        <video autoPlay={true} muted loop playsinline poster={poster}>
+        <video autoPlay={true} muted loop playsinline={true} poster={poster}>
             <source src={videoSrc} type="video/mp4"/>
         </video>
     </div>
