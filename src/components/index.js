@@ -12,6 +12,8 @@ export {default as ArtistProfitShare} from './ArtistProfitShare'
 export {default as CheckoutPage} from './CheckoutPage'
 export {default as SuccessPage} from './SuccessPage'
 
+export {default as CreateAccount} from './CreateAccount'
+
 
 export {truck as TruckIcon} from './Icons'
 export {heart as HeartIcon} from './Icons'

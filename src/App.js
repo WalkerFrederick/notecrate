@@ -13,7 +13,8 @@ import {
   BigReview,
   ArtistProfitShare,
   CheckoutPage,
-  SuccessPage
+  SuccessPage,
+  CreateAccount
 } from './components'
 
 import {
@@ -68,6 +69,9 @@ function App() {
           </Route>
           <Route path={"/account"}>
             account
+          </Route>
+          <Route path={"/create-account/:email/:customerId"}>
+            <CreateAccount/>
           </Route>
           <Route path={"/login"}>
             login

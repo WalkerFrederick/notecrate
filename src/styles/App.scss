@@ -714,3 +714,51 @@
     }
   }
 }
+
+.CreateAccount {
+  height: 80vh;
+  width: 100%;
+  background: $primary-dark;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+    .CreateAccount-container {
+    width: 100%;
+    max-width: 900px;
+    background: $white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:  $primary-dark;
+    * {
+      text-align: center;
+      padding: 0 25px;
+    }
+    h2 {
+      color: $primary-dark;
+      font-size: 1em;
+    }
+    label {
+      color: $secondary;
+      font-size: .8em;
+      width:200px;
+      text-align: left;
+    }
+    input {
+      width: 200px;
+      margin: 10px 0;
+      padding: 5px;
+      text-align: left;
+    }
+    button {
+      margin: 10px -0;
+      padding: 10px 0;
+      width: 100%;
+      max-width: 210px;
+      background: $secondary;
+      color: white;
+    }
+
+  }
+}
