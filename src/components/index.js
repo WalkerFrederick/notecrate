@@ -10,6 +10,7 @@ export {default as BigReview} from './BigReviews'
 export {default as ArtistProfitShare} from './ArtistProfitShare'
 
 export {default as CheckoutPage} from './CheckoutPage'
+export {default as SuccessPage} from './SuccessPage'
 
 
 export {truck as TruckIcon} from './Icons'

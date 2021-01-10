@@ -12,7 +12,8 @@ import {
   PastBoxes,
   BigReview,
   ArtistProfitShare,
-  CheckoutPage
+  CheckoutPage,
+  SuccessPage
 } from './components'
 
 import {
@@ -46,6 +47,12 @@ function App() {
           <Switch>
           <Route path={"/subscribe"}>
             <Switch>
+              <Route path="/subscribe/checkout/success/">
+                <SuccessPage/>
+              </Route>
+              <Route path="/subscribe/checkout/failure">
+                <CheckoutPage/>
+              </Route>
               <Route path="/subscribe/checkout/:priceId">
                 <CheckoutPage/>
               </Route>
