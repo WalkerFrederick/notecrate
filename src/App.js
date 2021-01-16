@@ -14,7 +14,8 @@ import {
   ArtistProfitShare,
   CheckoutPage,
   SuccessPage,
-  CreateAccount
+  CreateAccount,
+  UpcomingBox
 } from './components'
 
 import {
@@ -81,8 +82,7 @@ function App() {
           </Route>
           <Route path="/">
             <HomeHeader/>
-            <NewProductsTagLine/>
-            <Quote quote={"Fantastic Box. Some of the best stationary I've seen"} author={"Walker"}/>
+            <UpcomingBox/>
             <Pricing/>
             <BonusPoints/>
             <WhatYouGet/>
