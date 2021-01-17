@@ -1,5 +1,6 @@
 import {Logo} from './index'
 import background1 from '../products1.jpg'
+import background2 from '../products2.jpg'
 
 function PastBoxes() {
   return (
@@ -9,7 +10,7 @@ function PastBoxes() {
 
             </div>
         </div>
-        <div style={{backgroundImage: `url(${background1})`, backgroundSize: 'cover', backgroundPosition: 'center'}} className="box">
+        <div style={{backgroundImage: `url(${background2})`, backgroundSize: 'cover', backgroundPosition: 'center'}} className="box">
             <div className="tint">
 
             </div>
