@@ -32,8 +32,8 @@ function CreateAccount() {
             return body.text()
           }
           else {
-            let errorText = await body.text()
-            changeError(errorText)
+            let errorText = await body.json()
+            changeError(errorText.message)
             throw new Error(errorText)
           }
         })
@@ -48,7 +48,7 @@ function CreateAccount() {
                 return resp.json()
             })
             .then(json => {
-                console.log("CREATE ACCOUNT SESSION", json)
+                console.log("CREATE ACCOUNT SESSION", json.message)
                 window.location = json.url
                 
             })

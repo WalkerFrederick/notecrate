@@ -15,6 +15,7 @@ import {
   CheckoutPage,
   SuccessPage,
   CreateAccount,
+  Login,
   UpcomingBox
 } from './components'
 
@@ -27,7 +28,19 @@ import {
   withRouter
 } from "react-router-dom";
 import {useEffect} from 'react'
+import {FirebaseAuthConsumer, FirebaseAuthProvider} from '@react-firebase/auth'
 
+import firebase from "firebase/app";
+import "firebase/auth";
+const config = {
+  apiKey: "AIzaSyCu0OtToxRxjTH4MD6VnnVQj9jOZhugjdQ",
+  authDomain: "notecrate-5849b.firebaseapp.com",
+  projectId: "notecrate-5849b",
+  storageBucket: "notecrate-5849b.appspot.com",
+  messagingSenderId: "1086540562059",
+  appId: "1:1086540562059:web:c5777872f5898376399e8e",
+  measurementId: "G-MFCCV62KSX"
+};
 
 function _ScrollToTop(props) {
   const { pathname } = useLocation();
@@ -40,6 +53,7 @@ const ScrollToTop = withRouter(_ScrollToTop)
 
 function App() {
   return (
+    <FirebaseAuthProvider firebase={firebase} {...config}>
     <div className="App">
       <Router>
       <ScrollToTop>
@@ -75,7 +89,7 @@ function App() {
             <CreateAccount/>
           </Route>
           <Route path={"/login"}>
-            login
+            <Login/>
           </Route>
           <Route path={"/login"}>
             account
@@ -95,6 +109,8 @@ function App() {
 
       </Router>
     </div>
+    </FirebaseAuthProvider>
+
   );
 }
 

@@ -1,5 +1,5 @@
 import {Logo} from './index'
-import background1 from '../cratetest.jpg'
+import background1 from '../products1.jpg'
 
 function PastBoxes() {
   return (

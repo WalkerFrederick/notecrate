@@ -759,6 +759,11 @@
       background: $secondary;
       color: white;
     }
+    a {
+      color: $primary;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
 
   }
 }
