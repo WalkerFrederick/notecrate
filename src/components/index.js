@@ -1,4 +1,6 @@
 export {default as Navbar} from './Navbar.js';
+export {default as Footer} from './Footer.js';
+
 export {default as Logo} from './Logo.js';
 export {default as HomeHeader} from './Home-header'
 export {default as BonusPoints} from './BonusPoints'

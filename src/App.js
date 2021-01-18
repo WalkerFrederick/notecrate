@@ -3,6 +3,7 @@ import './styles/App.scss';
 
 import {
   Navbar,
+  Footer,
   HomeHeader,
   NewProductsTagLine,
   Quote,
@@ -73,6 +74,7 @@ function App() {
                 <CheckoutPage/>
               </Route>
               <Route path="/subscribe/">
+              <UpcomingBox/>
               <Pricing/>
               <BonusPoints/>
               <WhatYouGet/>
@@ -106,7 +108,7 @@ function App() {
           </Route>
         </Switch>
       </ScrollToTop>
-
+      <Footer></Footer>
       </Router>
     </div>
     </FirebaseAuthProvider>
