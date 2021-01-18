@@ -1,8 +1,4 @@
-
-function Logo(props) {
-  return (
-    <div className="Logo">
-    <svg height={props.height} viewBox="0 0 476 219" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="476" height="219" viewBox="0 0 476 219" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0)">
 <path d="M212.66 19.08C212.66 19.08 216.23 25.73 218.68 30.51C221.13 35.29 227.77 40.7 230.37 42.04C236.02 44.95 245.39 46.86 252.78 40.91C256.12 38.22 270.4 20.84 269.16 20.81L212.66 19.08Z" fill="#DDD3C8"/>
 <path d="M232.36 21.1C232.36 21.1 231.63 19.47 230.77 18.27C229.91 17.06 227.58 15.08 227.58 15.08L227.56 15.11L227.57 14.75C227.57 14.75 222.52 14.96 220.09 15.45C217.66 15.94 212.22 19.35 212.22 19.35L214.04 20.06L227.38 21.47L227.39 21.19L232.36 21.1Z" fill="#BBADA1"/>
@@ -40,9 +36,3 @@ function Logo(props) {
 </clipPath>
 </defs>
 </svg>
-
-    </div>
-  );
-}
-
-export default Logo;
