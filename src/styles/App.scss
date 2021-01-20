@@ -1,7 +1,7 @@
 @import 'colors.scss';
 @import 'fonts.scss';
 .App {
-  padding-top: 70px; 
+  padding-top: 40px; 
   font-size: 18px;
   * {
     font-family: $primary-font;
@@ -26,6 +26,7 @@
     padding-top: 10px;
   }
   * {
+    fill: $white;
   }
 }
 .Navbar {
@@ -107,6 +108,101 @@
   }
   
 }
+
+.alt-Navbar {
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  background-color: white;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .Navbar-1, .Navbar-2, .Navbar-3 {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .Navbar-1 {
+    width: 40%;
+    justify-content: flex-start;
+    button {
+      height: 50px;
+      width: 70px;
+      color: $primary-dark;
+    }
+  }
+  .Navbar-2 {
+    width: 60%;
+    position: relative;
+   .Navbar-2-Oval {
+     position: absolute;
+     top: 0px;
+     height: 80px;
+     padding-left: 15px;
+     padding-right: 15px;
+     display: flex;
+     align-items: center;
+     background: $primary-dark;
+     border: 3px solid $white;
+     border-radius: 100%;
+   }
+  }
+  .Navbar-3 {
+    width: 40%;
+    justify-content: flex-end;
+    button {
+      height: 50px;
+      width: 70px;
+      color: $primary-dark;
+    }
+    .action-button {
+      width: 150px;
+      background-color: $primary-dark;
+      color: $white;
+    }
+  }
+  @media (max-width: 650px) {
+    .Navbar-1 {
+      width: 40%;
+      display: none;
+      justify-content: flex-start;
+      button {
+        height: 50px;
+        width: 70px;
+  
+      }
+    }
+    .Navbar-2 {
+      width: 40%;
+      justify-content: flex-start;
+      padding-left: 10px;
+      svg  {
+        height: 30px;
+      }
+    }
+    .Navbar-3 {
+      width: 60%;
+      justify-content: flex-end;
+      button {
+        height: 50px;
+        width: 70px;
+      }
+      .action-button {
+        width: 140px;
+        background-color: $primary-dark;
+        color: $white;
+      }
+    }
+  }
+  
+}
+
 
 .Footer {
   background-color: $secondary;
