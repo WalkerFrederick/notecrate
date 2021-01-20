@@ -17,16 +17,15 @@
     opacity: 0.8;
   }
   h1 {
-    color: $secondary;
+    color: $primary-dark;
   }
 }
 .Logo {
-  fill: $primary;
+  fill: $primary-dark;
   svg {
     padding-top: 10px;
   }
   * {
-    fill: $primary;
   }
 }
 .Navbar {
@@ -150,15 +149,15 @@
     max-width: 400px;
     width: 90%;
     button {
-      background-color: $primary;
-      color: $white;
+      background-color: $white;
+      color: $primary-light;
       padding: 15px;
       width: 100%;
       margin-bottom: 15px;
     }
     :nth-child(2) {
       button {
-        background: $secondary;
+        background: $white;
       }
     }
   }
@@ -172,6 +171,60 @@
     height: 400px;
 
   }
+}
+
+.Video  {
+  display: flex;
+  justify-content: center;
+}
+.Video-Container {
+  position: relative;
+  h1 {
+    padding: 10px;
+    color: $white;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: $secondary-font;
+
+  }
+  .Video-Player {
+    position: absolute;
+    width: 90vw;
+    max-width: 600px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+  
+  }
+  @media (max-width: 600px) {
+    .Video-Player {
+      position: absolute;
+      width: 100%;
+      height: 350px;
+      max-width: 600px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+  
+    
+    }
+  }
+  .Video-Player-Container {
+
+  }
+  .Video-Container-top {
+    height: 350px;
+    width: 100%;
+    background-color: $primary;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  }
+  height: 550px;
+  width: 100%;
+  background-color: $secondary;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+
 }
 
 .NewProductsTagLine {
@@ -228,7 +281,7 @@
     grid-auto-rows: auto;
     .PricingCard {
       background: white;
-      border: 3px solid $secondary;
+      border: 3px solid $primary;
       display: flex;
       align-items: center;
       width: 100%;
@@ -241,7 +294,7 @@
         align-items: center;
         justify-content: center;
         text-align: center;
-        background: $secondary;
+        background: $primary;
         width: 100%;
         height: 50px;
         color: white;
@@ -273,7 +326,7 @@
 
         }
         button {
-          background: $secondary;
+          background: $primary-dark;
           color: white;
           width: 100%;
           height: 40px;
@@ -281,8 +334,8 @@
         }
         #action-bttn {
           background: none;
-          color: $primary;
-          border: 3px solid $primary;
+          color: $primary-dark;
+          border: 3px solid $primary-dark;
         }
         
       }

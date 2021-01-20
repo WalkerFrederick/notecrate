@@ -3,7 +3,7 @@ import background1 from '../background-1.jpg'
 import {Link} from 'react-router-dom'
 function Pricing() {
   return (
-    <div style={{backgroundImage: `url(${background1})`, backgroundPosition: "center bottom",  backgroundSize:  "cover", backgroundRepeat: 'no-repeat'}} className="Pricing">
+    <div style={{backgroundImage: `url()`, backgroundPosition: "center bottom",  backgroundSize:  "cover", backgroundRepeat: 'no-repeat'}} className="Pricing">
         <h1>CHOOSE YOUR PLAN</h1>
         <div className="Pricing-container">
         <Zoom duration={800} ><PricingCard priceId="price_1I73xjL1gFsxa91i0sforJBF" header={"Monthly"} price={"19"} bullets={["Free Shipping (US & CA)"]}/></Zoom>

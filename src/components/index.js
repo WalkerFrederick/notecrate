@@ -11,6 +11,7 @@ export {default as PastBoxes} from './PastBoxes'
 export {default as BigReview} from './BigReviews'
 export {default as ArtistProfitShare} from './ArtistProfitShare'
 export {default as UpcomingBox} from './UpcomingBox'
+export {default as Video} from './Video'
 
 export {default as CheckoutPage} from './CheckoutPage'
 export {default as SuccessPage} from './SuccessPage'

@@ -17,7 +17,8 @@ import {
   SuccessPage,
   CreateAccount,
   Login,
-  UpcomingBox
+  UpcomingBox,
+  Video 
 } from './components'
 
 import {
@@ -98,7 +99,7 @@ function App() {
           </Route>
           <Route path="/">
             <HomeHeader/>
-            <UpcomingBox/>
+            <Video></Video>
             <Pricing/>
             <BonusPoints/>
             <WhatYouGet/>
